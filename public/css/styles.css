@@ -65,7 +65,7 @@
 /* main header */
 .main_header{
     padding: 0;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
 }
 
 .main_header_left{
@@ -77,8 +77,6 @@
 }
 .main_header_left h1{
     font-size: 4rem;
-   
-    
     margin: 1rem 0 4rem 0;
     text-transform: capitalize;
 }
@@ -194,7 +192,7 @@
 }
 
 .main_layer #city_name {
-  padding: 2rem 0;
+  padding: 1rem 0;
   color: #bfc1c8;
   font-weight: 300;
   font-size: 2rem;
@@ -212,6 +210,7 @@
   font-weight: 900;
 }
 
+
 .fa {
   color: #009ad8;
 }
@@ -224,6 +223,23 @@ sup {
 .data_hide {
   visibility: hidden;
   transition: all 0.3s linear;
+}
+
+.main_layer .bottom_layer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  color: #fff;
+}
+.main_layer .bottom_layer p{
+  font-size: 2rem;
+  font-weight:400;
+}
+.main_layer .bottom_layer sup{
+  font-size: 3rem;
+  font-weight: 300;
+
+
 }
 
  /* footer style */

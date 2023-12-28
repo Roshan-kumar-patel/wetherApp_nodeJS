@@ -4,6 +4,8 @@ const city_name = document.getElementById('city_name');
 const temp_status = document.getElementById('temp_status');
 const temp_real_val = document.getElementById('temp_real_val');
 const datahide = document.querySelector('.middle_layer');
+const min_temp = document.getElementById('min_temp');
+const max_temp = document.getElementById('max_temp');
 
 const getInfo = async(event) => {
     event.preventDefault();
@@ -18,6 +20,8 @@ const getInfo = async(event) => {
         const data = await response.json();
         const arrData = [data];
         temp_real_val.innerText = arrData[0].main.temp;
+        min_temp.innerText = arrData[0].main.temp_min;
+        max_temp.innerText = arrData[0].main.temp_max;
         temp_status.innerText = arrData[0].weather[0].main;
         city_name.innerText = `${arrData[0].name}, ${arrData[0].sys.country}`;
         const tempMood = arrData[0].weather[0].main;
